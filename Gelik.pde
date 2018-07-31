@@ -1,10 +1,15 @@
 Engine eng;
 
-void setup()
+void settings()
 {
   eng = new Engine();
-  size(eng.Width, eng.Height);
   eng.setup();
+  size(eng.Width, eng.Height);
+}
+
+void setup()
+{
+  textFont(createFont("Segoe UI Symbol", 12));
 }
 
 void draw()

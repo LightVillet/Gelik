@@ -1,14 +1,13 @@
 class Engine 
 {
   Screen sc;
+  LS ls;
   int Width, Height;
   
   void setup()
   {
-    Width = 640;
-    Height = 480;
-    textFont(createFont("Segoe UI Symbol", 12));
-    
+    ls = new LS();
+    ls.loadOptions();
     sc = new Screen();
     sc.setup();
   }

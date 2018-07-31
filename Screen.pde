@@ -5,8 +5,8 @@ class Screen
   
   void setup()
   {
-    WIDTH = width / 10;
-    HEIGHT = height / 10;
+    WIDTH = eng.Width / 10;
+    HEIGHT = eng.Height / 10;
     screen = new Object[WIDTH][HEIGHT];
     
     for (int i = 0; i < WIDTH; i ++)
