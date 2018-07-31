@@ -22,9 +22,4 @@ class LoadSaver
   {
     
   }
-  
-  void loadPreferens()
-  {
-    
-  }
 }

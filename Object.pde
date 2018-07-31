@@ -10,5 +10,4 @@ class Object
     symbol = s;
     c = color(255);
   }
-  
 }

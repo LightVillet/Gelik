@@ -1,7 +1,0 @@
-class KeyParser
-{
-  void parse()
-  {
-    
-  }
-}
