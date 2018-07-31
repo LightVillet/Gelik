@@ -1,16 +1,20 @@
-Screen sc;
+Engine eng;
 
 void setup()
 {
-  size(640, 480);
-  textFont(createFont("Segoe UI Symbol", 12));
-  
-  sc = new Screen();
-  sc.setup();
+  eng = new Engine();
+  size(eng.Width, eng.Height);
+  eng.setup();
 }
 
 void draw()
 {
-  background(0);
-  sc.draw();
+  eng.draw();
 }
+
+void keyPressed()
+{
+  eng.keyPressed();
+}
+
+//It's all what we need here
