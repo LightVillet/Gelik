@@ -1,0 +1,7 @@
+class KeyParser
+{
+  void parse()
+  {
+    
+  }
+}

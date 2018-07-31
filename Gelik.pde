@@ -12,11 +12,6 @@ void setup()
   textFont(createFont("Segoe UI Symbol", 12));
 }
 
-void draw()
-{
-  eng.draw();
-}
-
 void keyPressed()
 {
   eng.keyPressed();

@@ -1,4 +1,4 @@
-class LS
+class LoadSaver
 {
   void loadOptions()
   {
