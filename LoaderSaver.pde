@@ -13,9 +13,16 @@ class LoadSaver
     saveStrings("Options.txt", str);
   }
   
-  void loadMap()
+  Map loadMap(String name)
   {
-    
+    String[] str = loadStrings(name);
+    Map ans = new Map();
+    for (int i = 0; i < str.length; i++)
+    {
+      StringDict params = new StringDict();
+      //ans.map.add((new Object()));
+    }
+    return ans;
   }
   
   void loadHUD()

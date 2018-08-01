@@ -21,8 +21,8 @@ class Screen
     {
       for (int j = 2; j < HEIGHT - 2; j++)
       {
-        screen[i][j].c = color(255, 0, 0);
-        screen[i][j].symbol = ".";
+        screen[i][j].params.set("color", str(color(255, 0, 0)));
+        screen[i][j].params.set("symbol", ".");
       }
     }
   }
@@ -33,8 +33,9 @@ class Screen
      {
        for (int j = 0; j < HEIGHT; j++)
        {
-         fill(screen[i][j].c);
-         text(screen[i][j].symbol, i * 10, j * 10 + 10);
+         String[] cl = screen[i][j].params.get("color").split(" ");
+         fill(int(cl[0]), int(cl[1]), int(cl[2]));
+         text(screen[i][j].params.get("symbol"), i * 10, j * 10 + 10);
        }
      }
   }

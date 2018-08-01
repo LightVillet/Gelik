@@ -19,3 +19,17 @@ class Menu extends State
     
   }
 }
+
+class Game extends State
+{
+  Map map;
+  Game()
+  {
+    map = eng.ls.loadMap("startLVL.txt");
+  }
+  
+  void track()
+  {
+    
+  }
+}
